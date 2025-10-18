@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+<html lang="en-gb" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Knowledge in Place – New Objects, Spaces, and Interactions for Knowledge Sharing in Museums</title>
+        <meta name="description" content="The studio project ‘Knowledge in Place’ is researching how museums can remain relevant in a digital world and respond to the needs of today‘s visitors. In cooperation with the Klassik Stiftung Weimar, product design students from weißensee school of art and design developed concepts for new objects, spaces and interactions that convey knowledge in an inspiring and personalised way. The concepts and prototypes are being developed in the context of the re-design phase of Goethe’s residence in Weimar.">
+
+
+        <meta name="author" content="Product Design Department at Weißensee Kunsthochschule Berlin (KH-Berlin weißensee), HU Clusters of Excellence, Matters of Activity">
+        <meta name="keywords" content="Interaction Design, weißensee Kunsthochschule Berlin, KH-Berlin, Produktdesign, HU Clusters of Excellence, Matters of Activity, Klassik Stiftung Weimar, Goethe Wohnhaus, museum, Knowledge transfer" />
+        <meta name="copyright" content="(c) weißensee Kunsthochschule Berlin" />
+        <meta name="language" content="english" />
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32px.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16px.png">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+
+    <!-- socical media (open graph) meta contend here -->
+    <meta property="og:title" content="Knowledge in Place – New Objects, Spaces, and Interactions for Knowledge Sharing in Museums">
+    <meta property="og:site_name" content="Knowledge in Place">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="The studio project ‘Knowledge in Place’ is researching how museums can remain relevant in a digital world and respond to the needs of today‘s visitors. In cooperation with the Klassik Stiftung Weimar, product design students from weißensee school of art and design developed concepts for new objects, spaces and interactions that convey knowledge in an inspiring and personalised way. The concepts and prototypes are being developed in the context of the re-design phase of Goethe’s residence in Weimar." >
+    <meta property="og:image" content="https://knowledge.designing-interactions.de/img/image_1440x804.png" >
+    <meta property="og:image:width" content="1440" >
+    <meta property="og:image:height" content="804" >
+    <meta property="og:url" content="https://knowledge.designing-interactions.de/">       
+    
+    <!-- socical media (twitter) meta contend here -->
+    <meta name="twitter:title" content="Knowledge in Place – New Objects, Spaces, and Interactions for Knowledge Sharing in Museums">
+    <meta name="twitter:description" content="The studio project ‘Knowledge in Place’ is researching how museums can remain relevant in a digital world and respond to the needs of today‘s visitors. In cooperation with the Klassik Stiftung Weimar, product design students from weißensee school of art and design developed concepts for new objects, spaces and interactions that convey knowledge in an inspiring and personalised way. The concepts and prototypes are being developed in the context of the re-design phase of Goethe’s residence in Weimar.">
+    <meta name="twitter:image" content="https://knowledge.designing-interactions.de/img/image_1440x804.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Uikit core -->
+        <link rel="stylesheet" href="css/uikit.css">
+        <script src="vendor/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+
+    <!-- 3d viewer -->
+        <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+        
+        <script src="js/webgl.min.js"></script>
+        <script src="js/three.min.js"></script>
+        <script src="js/stlloader.min.js"></script>
+        <script src="js/orbitcontrols.min.js"></script>
+        <script src="js/stlviewer.js"></script>
+    </head>
+    <body>
+      
+              
+                    <div class="uk-width-medium-1-1 uk-vertical-align uk-text-center uk-padding-remove-top" style="background: url('img/title.jpg') 50% 35% no-repeat; height: 450px;">
+                    </div>
+         
+
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+ 
+          
+                    <div class="uk-grid ">
+                        <div class="uk-width-1-1 uk-text-left">
+                    <h1 class="uk-heading-small uk-margin-remove-bottom uk-text-uppercase" style="color: #FD5F00">Knowledge in Place</h1>
+                    <p class="uk-text-default uk-margin-remove-top ">New Objects, Spaces, and Interactions for Knowledge Sharing in Museums
+                       </p>
+                     
+                        </div>
+
+                      
+                    </div>
+      
+            
+                    <div class="uk-grid" data-uk-grid-margin>
+
+                        <div class="uk-width-2-3">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-1">
+                                   
+                                    <p class="uk-text-default uk-text-bold"> The studio project ‘Knowledge in Place’ is researching how museums can remain relevant in a digital world and respond to the needs of today‘s visitors. In cooperation with the Klassik Stiftung Weimar, product design students from weißensee school of art and design developed concepts for new objects, spaces and interactions that convey knowledge in an inspiring and personalised way. The concepts and prototypes are being developed in the context of the re-design phase of Goethe’s residence in Weimar. 
+                           
+                                    </p> 
+        
+                                    Museums are more than just places for sharing knowledge. They offer immersive, one-of-a-kind experiences and serve as important social spaces for connection and community-building. They allow visitors to discover new perspectives, engage in dialogue, and explore knowledge in meaningful and inspiring ways. At the same time, museums are increasingly challenged to remain relevant in a world where information is often accessed digitally and in decentralized ways.
+                                    <br> 
+                                <br>
+                                Expectations around learning have shifted significantly in recent years. People now seek more personalized, interactive experiences and the freedom to dive deeper into topics that interest them. They want content that responds to their individual needs and allows for self-directed exploration. So, what does this change mean for museums and their role as spaces of learning?
+                     <br> 
+                                <br>
+                                This question was the central focus this project course undertaken by product design students. Their goal was to develop scenarios and interaction design concepts for the museum space. What new (digital) tools, layers, and approaches to knowledge transfer can we bring into museums? How can we guide visitors through exhibitions while also creating opportunities for individual exploration and personal connections?
+                          <br> 
+                                <br>
+                                Throughout the project, the holistic experience of a museum visit remained a key consideration. Experiencing and interacting with physical objects is a fundamental component and a unique strength of museums. Particularly in the context of knowledge transfer, multi-sensory interaction holds great potential, especially when it involves physical objects and tangible interfaces. Active interaction with the hands not only strengthens haptic and spatial perception but also promotes cognitive processes and is closely linked to our thought processes. Furthermore, physical interfaces enable a multi-layered intake of information that goes beyond visual and auditory stimuli, incorporating tactile and kinesthetic experiences. 
+                                <br />
+                               <br />
+                               The cooperation with the Klassik Stiftung Weimar, and particularly thanks to the input and feedback from the foundation’s experts, ensured a practice-oriented concept development and design process. Goethe’s residence and the Klassik Stiftung’s digital collection provided the thematic framework for the project.
+       
+                            
+                              
+                                <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="uk-width-1-3">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-6">
+                               
+                                </div>
+                                <div class="uk-width-5-6" style="color: #FD5F00">
+                                    
+                                    Interdisciplinary project by the department of <a href="https://kh-berlin.de/en/studies/departments/bama-product-design/bama-product-design" class="projekt-link"> product design</a> at weißensee kunsthochschule berlin and the 
+                                    <a href="https://www.klassik-stiftung.de/startseite/digital/" class="projekt-link"> Klassik Stiftung Weimar</a> 
+                                    <br> 
+                                    <br>
+                                     Supervision and Workshops: <a href="https://kh-berlin.de/personen/4374" class="projekt-link">Prof. Thomas Ness</a>, Rike Glaser, <a href="https://kh-berlin.de/personen/3528" class="projekt-link">Jörg Hugo</a>, <a href="https://kh-berlin.de/personen/5280" class="projekt-link">Simon von Schmude</a>, <a href="https://kh-berlin.de/personen/2443" class="projekt-link">Yolanda Leask</a>
+                                    <br> 
+                                    <br>
+                                    On the foundation's side, the cooperation was supported by Dr. Dirk Wintergrün, Kristina Johannes, Annika Schlimm, and Ira Klinkenbusch."
+                                    <br> 
+                                    <br>
+                                    The studio project was executed as part of the  <a href="https://www.matters-of-activity.de/" class="projekt-link"> Cluster of Excellence »Matters of Activity« </a>
+                                    <br>
+                                    <br>
+            
+                                    summer term 2025  </div>
+                             </div>
+                        </div>
+                        </div>
+                         </div>
+
+                         
+                         <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> collabsable text</div> 
+                         <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+                         <ul uk-accordion="multiple: true">
+                            <li>
+                                <a class="uk-accordion-title" href>Studio Project Description </a>
+                                <div class="uk-accordion-content">
+                                    <p class="uk-text-default uk-text-bold"> The studio project ‘Knowledge in Place’ is researching how museums can remain relevant in a digital world and respond to the needs of today‘s visitors. In cooperation with the Klassik Stiftung Weimar, product design students from weißensee school of art and design developed concepts for new objects, spaces and interactions that convey knowledge in an inspiring and personalised way. The concepts and prototypes are being developed in the context of the re-design phase of Goethe’s residence in Weimar. 
+                               
+                                    </p> 
+        
+                                    Museums are more than just places for sharing knowledge. They offer immersive, one-of-a-kind experiences and serve as important social spaces for connection and community-building. They allow visitors to discover new perspectives, engage in dialogue, and explore knowledge in meaningful and inspiring ways. At the same time, museums are increasingly challenged to remain relevant in a world where information is often accessed digitally and in decentralized ways.
+                                    <br> 
+                                <br>
+                                Expectations around learning have shifted significantly in recent years. People now seek more personalized, interactive experiences and the freedom to dive deeper into topics that interest them. They want content that responds to their individual needs and allows for self-directed exploration. So, what does this change mean for museums and their role as spaces of learning?
+                               <br> 
+                                <br>
+                                This question was the central focus this project course undertaken by product design students. Their goal was to develop scenarios and interaction design concepts for the museum space. What new (digital) tools, layers, and approaches to knowledge transfer can we bring into museums? How can we guide visitors through exhibitions while also creating opportunities for individual exploration and personal connections?
+                                <br> 
+                                <br>
+                                Throughout the project, the holistic experience of a museum visit remained a key consideration. Experiencing and interacting with physical objects is a fundamental component and a unique strength of museums. Particularly in the context of knowledge transfer, multi-sensory interaction holds great potential, especially when it involves physical objects and tangible interfaces. Active interaction with the hands not only strengthens haptic and spatial perception but also promotes cognitive processes and is closely linked to our thought processes. Furthermore, physical interfaces enable a multi-layered intake of information that goes beyond visual and auditory stimuli, incorporating tactile and kinesthetic experiences. 
+                                <br />
+                               <br />
+                               The cooperation with the Klassik Stiftung Weimar, and particularly thanks to the input and feedback from the foundation’s experts, ensured a practice-oriented concept development and design process. Goethe’s residence and the Klassik Stiftung’s digital collection provided the thematic framework for the project.
+       
+                            
+                              
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+            
+                                </div>
+                            </li>
+                            <li >
+                                
+                                <a class="uk-accordion-title" href>Info</a>
+                                <div class="uk-accordion-content">
+                                    <div class="" style="color: #FD5F00">
+                                        
+                                        Interdisciplinary project by the department of <a href="https://kh-berlin.de/en/studies/departments/bama-product-design/bama-product-design" class="projekt-link"> product design</a> at weißensee kunsthochschule berlin and the 
+                                        <a href="https://www.klassik-stiftung.de/startseite/digital/" class="projekt-link"> Klassik Stiftung Weimar</a> 
+                                        <br> 
+                                        <br>
+                                         Supervision and Workshops: <a href="https://kh-berlin.de/personen/4374" class="projekt-link">Prof. Thomas Ness</a>, Rike Glaser, <a href="https://kh-berlin.de/personen/3528" class="projekt-link">Jörg Hugo</a>, <a href="https://kh-berlin.de/personen/5280" class="projekt-link">Simon von Schmude</a>, <a href="https://kh-berlin.de/personen/2443" class="projekt-link">Yolanda Leask</a>
+                                        <br> 
+                                        <br>
+                                        On the foundation's side, the cooperation was supported by Dr. Dirk Wintergrün, Kristina Johannes, Annika Schlimm, and Ira Klinkenbusch."
+                                        <br> 
+                                        <br>
+                                        The studio project was executed as part of the  <a href="https://www.matters-of-activity.de/" class="projekt-link"> Cluster of Excellence »Matters of Activity« </a>
+                                        <br>
+                                        <br>
+                
+                                        summer term 2025
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                            
+                        </ul>
+                 
+                        </div>
+
+
+        
+                    
+                        <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> Title Pic cover </div> 
+
+                        <div class="uk-cover-container uk-height-large" >
+                            <img src="img/project01/title.jpg" alt="" uk-cover>
+                        </div>
+                        <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> Title Pic cover + Slideshow</div> 
+
+                        <div class="uk-position-relative uk-visible-toggle uk-light"  tabindex="-1" uk-slideshow>
+
+                            <div class="uk-slideshow-items">
+                                <div>
+                                    <img src="img/project01/title.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img1.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img2.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img3.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img4.jpg" alt="" uk-cover>
+                                </div>
+                            </div>
+                        
+                            <a class="uk-position-center-left uk-position-small uk-slidenav-large uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-slidenav-large uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                        
+                        </div>
+
+                        <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> Title Pic cover + sticky Slideshow </div> 
+                        
+
+                        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-inverse uk-slideshow >
+
+                            <div class="uk-slideshow-items uk-position-z-index-negative " uk-sticky="overflow-flip: true; end: 100%;" >
+                                <div>
+                                    <img src="img/project01/title.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img1.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img2.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img3.jpg" alt="" uk-cover>
+                                </div>
+                                <div>
+                                    <img src="img/project01/img4.jpg" alt="" uk-cover>
+                                </div>
+                            </div>
+                        
+                            <a class="uk-position-center-left uk-position-small uk-slidenav-large uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous" ></a>
+                            <a class="uk-position-center-right uk-position-small uk-slidenav-large uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+                        
+                        </div>
+                        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom uk-background-muted">
+ 
+
+                        <div class="uk-width-medium-1-1"  >
+                        <div class="uk-vertical-align-middle uk-width-1-2">
+        
+                            <div >
+                                <!-- project title goes here: -->
+                            <h2 class="uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom"> GOETHESCHER MODULWÜRFEL</h2>
+                            <p class="uk-text-default uk-margin-remove-top ">Lion Votteler 
+                            </p>
+                            </div>
+                            <div >
+                                
+                            </div>
+                            <div class="">
+                                The Goethe Museum lacks space for visitors to rest or engage with the Klassik Stiftung’s extensive digital collection of ~30,000 exhibits. The Project “Goethescher-Modul-Würfel” is a temporary pavilion that offers both—a place to pause and an informal setting to explore curated digital content.
+                                <br>
+                                Inspired by Goethe’s theory of colour and optics, the design started with an octagonal pattern. Transformed into a three-dimensional form it becomes a tetradecahedron. This cube-like, self-supporting structure is stable and easy to assemble, made from lightweight aluminium profiles, which are widely available and allow for variable uses within its structure.
+                                <br>
+                                Five of its six octagonal sides are covered in fabric, creating a canvas for projections or prints—ranging from event graphics (for e.g. Faust year) to digital exhibits from the Stiftung’s archives. The sixth side remains open for entry. The flexible format also allows it to be used for temporary installations, such as VR experiences or interactive media.
+                                <br>
+                                Fabric was chosen as a nod to Goethe’s interest in textiles, with the pavilion’s padded textile floor and cushions referencing quilted fabrics from his bedroom.
+                                <br>
+                                Designed for easy relocation, the pavilion can be used not only at the Goethe Haus but across other Klassik Stiftung sites in and around Weimar—offering a versatile and reusable platform for rest, reflection, and engagement.
+                            </div>
+                    
+                        </div> 
+                        <div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+
+                            <img class="uk-width-1-2" src="img/project01/img1.jpg">
+                            <img class="uk-width-1-2" src="img/project01/img2.jpg">
+                            <img class="uk-width-1-2" src="img/project01/img3.jpg">
+                            <img class="uk-width-1-2" src="img/project01/img4.jpg">
+                            <video class="uk-width-1-2" src="videos/project01/GoethescherModulWuerfel_LionVotteler.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+                        
+                           
+                    </div>
+                    </div>
+
+                    <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom">Proejct Desc. Layout + STL Viewer (only works with localhost)</div> 
+                    <div class="uk-grid uk-width-1-1">
+                    
+                        <div class="uk-width-1-2">
+        
+                            <div >
+                                <!-- project title goes here: -->
+                            <h2 class="uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom"> GOETHESCHER MODULWÜRFEL</h2>
+                            <p class="uk-text-default uk-margin-remove-top ">Lion Votteler 
+                            </p>
+                            </div>
+                            <div>
+                                
+                            </div>
+                            <div class="">
+                                The Goethe Museum lacks space for visitors to rest or engage with the Klassik Stiftung’s extensive digital collection of ~30,000 exhibits. The Project “Goethescher-Modul-Würfel” is a temporary pavilion that offers both—a place to pause and an informal setting to explore curated digital content.
+                                <br>
+                                Inspired by Goethe’s theory of colour and optics, the design started with an octagonal pattern. Transformed into a three-dimensional form it becomes a tetradecahedron. This cube-like, self-supporting structure is stable and easy to assemble, made from lightweight aluminium profiles, which are widely available and allow for variable uses within its structure.
+                                <br>
+                                Five of its six octagonal sides are covered in fabric, creating a canvas for projections or prints—ranging from event graphics (for e.g. Faust year) to digital exhibits from the Stiftung’s archives. The sixth side remains open for entry. The flexible format also allows it to be used for temporary installations, such as VR experiences or interactive media.
+                                <br>
+                                Fabric was chosen as a nod to Goethe’s interest in textiles, with the pavilion’s padded textile floor and cushions referencing quilted fabrics from his bedroom.
+                                <br>
+                                Designed for easy relocation, the pavilion can be used not only at the Goethe Haus but across other Klassik Stiftung sites in and around Weimar—offering a versatile and reusable platform for rest, reflection, and engagement.
+                            </div>
+                    
+                        </div> 
+                        <div class="uk-width-1-2 uk-inline ">
+
+                        <div class="uk-width-1-6"></div>
+                        
+                         <div class="uk-width-5-6 uk-position-bottom-right"> 
+                            <div  class="stlviewer uk-margin-medium-bottom"  data-src="stl/ScreenTop.stl" data-rotate="x" data-zdistance="3.3" style=" height: 28vh;">
+                        </div> 
+                        <video src="videos/project01/GoethescherModulWuerfel_LionVotteler.mp4" poster="videos/project01/lion_poster.png" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+                        </div>
+                           
+                    </div>
+                    
+                    </div>
+
+                     <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> Project desc. Layout + Lightboxes</div> 
+                         <div >
+                                <!-- project title goes here: -->
+                            <h2 class="uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom"> GOETHESCHER MODULWÜRFEL</h2>
+                            <p class="uk-text-default uk-margin-remove-top ">Lion Votteler 
+                            </p>
+                            </div>
+
+                     <div class="uk-grid uk-width-1-1"> 
+                        
+
+                
+
+                            <div class="uk-width-1-2" uk-grid uk-lightbox="animation: slide">
+                                <div>
+                     
+                                 <div class="uk-text-center">
+                                        <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                            <img src="img/project01/img1.jpg"  alt="">
+                                            <div class="uk-position-center">
+                                        <a class="uk-inline uk-link-muted" href="img/project01/img1.jpg" data-caption="Caption 1">
+                                            <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                      </a>
+                                       </div>
+                                     </div>
+                                    </div>
+                                      
+                                </div>
+                                <div>
+                                    <div class="uk-text-center">
+                                        <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                            <img src="img/project01/img2.jpg"  alt="">
+                                            <div class="uk-position-center">
+                                        <a class="uk-inline uk-link-muted" href="img/project01/img2.jpg" data-caption="Caption 1">
+                                            <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                      </a>
+                                       </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-text-center">
+                                        <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                            <img src="img/project01/img3.jpg"  alt="">
+                                            <div class="uk-position-center">
+                                        <a class="uk-inline uk-link-muted" href="img/project01/img3.jpg" data-caption="Caption 1">
+                                            <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                      </a>
+                                       </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-text-center">
+                                        <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                            <img src="img/project01/img4.jpg"  alt="">
+                                            <div class="uk-position-center">
+                                        <a class="uk-inline uk-link-muted" href="img/project01/img4.jpg" data-caption="Caption 4">
+                                            <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                      </a>
+                                       </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                      
+                      
+
+                        <div class=" uk-width-1-2 ">
+        
+                         
+                            <div class="uk-margin-medium-bottom">
+                                The Goethe Museum lacks space for visitors to rest or engage with the Klassik Stiftung’s extensive digital collection of ~30,000 exhibits. The Project “Goethescher-Modul-Würfel” is a temporary pavilion that offers both—a place to pause and an informal setting to explore curated digital content.
+                                <br>
+                                Inspired by Goethe’s theory of colour and optics, the design started with an octagonal pattern. Transformed into a three-dimensional form it becomes a tetradecahedron. This cube-like, self-supporting structure is stable and easy to assemble, made from lightweight aluminium profiles, which are widely available and allow for variable uses within its structure.
+                                <br>
+                                Five of its six octagonal sides are covered in fabric, creating a canvas for projections or prints—ranging from event graphics (for e.g. Faust year) to digital exhibits from the Stiftung’s archives. The sixth side remains open for entry. The flexible format also allows it to be used for temporary installations, such as VR experiences or interactive media.
+                                <br>
+                                Fabric was chosen as a nod to Goethe’s interest in textiles, with the pavilion’s padded textile floor and cushions referencing quilted fabrics from his bedroom.
+                                <br>
+                                Designed for easy relocation, the pavilion can be used not only at the Goethe Haus but across other Klassik Stiftung sites in and around Weimar—offering a versatile and reusable platform for rest, reflection, and engagement.
+                            </div>
+                           <video  src="videos/project01/GoethescherModulWuerfel_LionVotteler.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+                        
+                           
+                        </div> 
+                   
+                    </div>
+
+
+                    <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> Project desc. Layout + Lightboxes </div> 
+                    <div >
+                           <!-- project title goes here: -->
+                       <h2 class="uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom"> GOETHESCHER MODULWÜRFEL</h2>
+                       <p class="uk-text-default uk-margin-remove-top ">Lion Votteler 
+                       </p>
+                       </div>
+
+                <div class="uk-grid uk-width-1-1"> 
+                   
+
+                    <div class="uk-width-1-4" ></div>
+
+                       <div class="uk-width-1-4 uk-padding-remove" uk-grid uk-lightbox="animation: slide">
+                           <div class="uk-padding-remove uk-margin-remove">
+            
+                                   <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                       <img src="img/project01/img1.jpg"  alt="">
+                                       <div class="uk-position-center">
+                                   <a class="uk-inline uk-link-muted" href="img/project01/img1.jpg" data-caption="Caption 1">
+                                       <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                 </a>
+                                  </div>
+                                </div>
+                            
+                                 
+                           </div>
+                           <div class="uk-padding-remove uk-margin-remove">
+                          
+                                   <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                       <img src="img/project01/img2.jpg"  alt="">
+                                       <div class="uk-position-center">
+                                   <a class="uk-inline uk-link-muted" href="img/project01/img2.jpg" data-caption="Caption 1">
+                                       <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                 </a>
+                                  </div>
+                                </div>
+                               </div>
+                         
+                           <div class="uk-padding-remove uk-margin-remove">
+                              
+                                   <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                       <img src="img/project01/img3.jpg"  alt="">
+                                       <div class="uk-position-center">
+                                   <a class="uk-inline uk-link-muted" href="img/project01/img3.jpg" data-caption="Caption 1">
+                                       <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                 </a>
+                                  </div>
+                                </div>
+                               </div>
+                          
+                           <div class="uk-padding-remove uk-margin-remove">
+                             
+                                   <div class="uk-inline-clip uk-transition-toggle uk-dark" tabindex="0">
+                                       <img src="img/project01/img4.jpg"  alt="">
+                                       <div class="uk-position-center">
+                                   <a class="uk-inline uk-link-muted" href="img/project01/img4.jpg" data-caption="Caption 4">
+                                       <span class="uk-transition-fade" uk-icon="icon: overlay-icon; ratio: 2"></span>
+                                 </a>
+                                  </div>
+                                </div>
+                              
+                           </div>
+                           
+                       </div>
+                 
+                 
+
+                   <div class=" uk-width-1-2 ">
+   
+                    
+                       <div class="uk-margin-medium-bottom">
+                           The Goethe Museum lacks space for visitors to rest or engage with the Klassik Stiftung’s extensive digital collection of ~30,000 exhibits. The Project “Goethescher-Modul-Würfel” is a temporary pavilion that offers both—a place to pause and an informal setting to explore curated digital content.
+                           <br>
+                           Inspired by Goethe’s theory of colour and optics, the design started with an octagonal pattern. Transformed into a three-dimensional form it becomes a tetradecahedron. This cube-like, self-supporting structure is stable and easy to assemble, made from lightweight aluminium profiles, which are widely available and allow for variable uses within its structure.
+                           <br>
+                           Five of its six octagonal sides are covered in fabric, creating a canvas for projections or prints—ranging from event graphics (for e.g. Faust year) to digital exhibits from the Stiftung’s archives. The sixth side remains open for entry. The flexible format also allows it to be used for temporary installations, such as VR experiences or interactive media.
+                           <br>
+                           Fabric was chosen as a nod to Goethe’s interest in textiles, with the pavilion’s padded textile floor and cushions referencing quilted fabrics from his bedroom.
+                           <br>
+                           Designed for easy relocation, the pavilion can be used not only at the Goethe Haus but across other Klassik Stiftung sites in and around Weimar—offering a versatile and reusable platform for rest, reflection, and engagement.
+                       </div>
+                      <video  src="videos/project01/GoethescherModulWuerfel_LionVotteler.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+                   
+                      
+                   </div> 
+              
+               </div>
+
+               <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> Project desc. Layout + overflow scroll</div> 
+               <div >
+                      <!-- project title goes here: -->
+                  <h2 class="uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom"> GOETHESCHER MODULWÜRFEL</h2>
+                  <p class="uk-text-default uk-margin-remove-top ">Lion Votteler 
+                  </p>
+                  </div>
+
+           <div class="uk-grid uk-width-1-1"> 
+              
+           
+
+                  <div class="uk-width-1-2 " uk-grid>
+ <div class="uk-height-large">
+                <div class="js-wrapper">
+
+<div uk-overflow-auto="selContainer: .uk-height-large; selContent: .js-wrapper">
+            
+                                  <img src="img/project01/img1.jpg"  alt="">
+                               
+
+                        
+                        
+                             <img src="img/project01/img2.jpg"  alt="">
+                  
+                        <img src="img/project01/img3.jpg"  alt="">
+                  
+                    <img src="img/project01/img4.jpg"  alt="">
+                  
+          
+                    </div>  
+                      
+                  </div>
+                  </div>
+                  </div>
+            
+            
+
+              <div class=" uk-width-1-2 ">
+
+               
+                  <div class="uk-margin-medium-bottom">
+                      The Goethe Museum lacks space for visitors to rest or engage with the Klassik Stiftung’s extensive digital collection of ~30,000 exhibits. The Project “Goethescher-Modul-Würfel” is a temporary pavilion that offers both—a place to pause and an informal setting to explore curated digital content.
+                      <br>
+                      Inspired by Goethe’s theory of colour and optics, the design started with an octagonal pattern. Transformed into a three-dimensional form it becomes a tetradecahedron. This cube-like, self-supporting structure is stable and easy to assemble, made from lightweight aluminium profiles, which are widely available and allow for variable uses within its structure.
+                      <br>
+                      Five of its six octagonal sides are covered in fabric, creating a canvas for projections or prints—ranging from event graphics (for e.g. Faust year) to digital exhibits from the Stiftung’s archives. The sixth side remains open for entry. The flexible format also allows it to be used for temporary installations, such as VR experiences or interactive media.
+                      <br>
+                      Fabric was chosen as a nod to Goethe’s interest in textiles, with the pavilion’s padded textile floor and cushions referencing quilted fabrics from his bedroom.
+                      <br>
+                      Designed for easy relocation, the pavilion can be used not only at the Goethe Haus but across other Klassik Stiftung sites in and around Weimar—offering a versatile and reusable platform for rest, reflection, and engagement.
+                  </div>
+                 
+                 
+              </div> 
+         <video class="uk-width-1-1" src="videos/project01/GoethescherModulWuerfel_LionVotteler.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+              
+          </div>
+
+          <!--Trennlinie--><div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom"> Titlepic + Thumbnav Menu</div>
+                    
+
+          <div class="uk-position-relative" uk-slideshow="animation: fade">
+
+            <div class="uk-slideshow-items">
+                <div>
+                    <img src="img/title.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="img/project01/title.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="img/project02/title.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="img/project03/title.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="img/project04/title.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="img/project05/title.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="img/project06/title.jpg" alt="" uk-cover>
+                </div>
+                <div>
+                    <img src="img/project07/title.jpg" alt="" uk-cover>
+                </div>
+            </div>
+
+            <div> 
+                <ul class="uk-position-small uk-thumbnav uk-position-bottom-center "  uk-switcher>
+                    <li uk-slideshow-item="0" class="uk-active"><a href="#"><img src="img/title.jpg" width="100" height="67" alt=""></a></li>
+                    <li uk-slideshow-item="1"><a href="#"><img src="img/project01/title.jpg" width="100" height="67" alt=""></a></li>
+                    <li uk-slideshow-item="2"><a href="#"><img src="img/project02/title.jpg" width="100" height="67" alt=""></a></li>
+                    <li uk-slideshow-item="3"><a href="#"><img src="img/project03/title.jpg" width="100" height="67" alt=""></a></li>
+                    <li uk-slideshow-item="4"><a href="#"><img src="img/project04/title.jpg" width="100" height="67" alt=""></a></li>
+                    <li uk-slideshow-item="5"><a href="#"><img src="img/project05/title.jpg" width="100" height="67" alt=""></a></li>
+                    <li uk-slideshow-item="6"><a href="#"><img src="img/project06/title.jpg" width="100" height="67" alt=""></a></li>
+                    <li uk-slideshow-item="7"><a href="#"><img src="img/project07/title.jpg" width="100" height="67" alt=""></a></li>
+
+                </ul>
+     
+
+           
+
+         </div>
+
+
+
+        </div>
+
+                    <!--Trennlinie--> <div class="uk-divider-small uk-margin-medium-top uk-margin-medium-bottom">working Thumbnav menu</div>
+                    
+                     <!--image horizontal menu-->
+               <div class="uk-width-1-1">
+       
+
+                    <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-nowrap "  uk-switcher>
+                
+                    <li class="uk-width-expand uk-margin-xsmall uk-padding-remove" class="uk-active"><a href="#"> <img src="img/project01/title.jpg" alt="">
+                    </a></li>
+
+                    <li class="uk-width-expand uk-margin-xsmall uk-padding-remove"><a href="#"> <img  src="img/project02/title.jpg" alt=""> 
+                    </a></li>
+
+                    <li class="uk-width-expand uk-margin-xsmall uk-padding-remove"><a href="#"> <img  src="img/project03/title.jpg" alt="">
+                     </a></li>
+
+                    <li class="uk-width-expand uk-margin-xsmall uk-padding-remove"><a href="#"> <img src="img/project04/title.jpg" alt=""> </a></li>
+
+                    <li class="uk-width-expand uk-margin-xsmall uk-padding-remove"><a href="#"> <img  src="img/project05/title.jpg" alt=""> </a></li>
+
+                    <li class="uk-width-expand uk-margin-xsmall uk-padding-remove"><a href="#"> <img  src="img/project06/title.jpg" alt=""> </a></li>
+
+                    <li class="uk-width-expand uk-margin-xsmall uk-margin-remove-right uk-padding-remove"><a href="#"> <img  src="img/project07/title.jpg" alt=""> </a></li>
+
+
+                </ul>
+      
+                <div class="uk-switcher uk-margin">
+                                     
+                  <div>
+                        <div class="uk-vertical-align-middle uk-width-1-2 ">
+
+                            <div>
+                                <!-- project title goes here: -->
+                               <h2 class="uk-text-uppercase uk-margin-remove-bottom"> GOETHESCHER MODULWÜRFEL</h2>
+                               <p class="uk-text-default uk-margin-remove-top ">Lion Votteler 
+                               </p> 
+                            </div>
+                            <div>
+                                
+                            </div>
+                            <div class="">
+                                The Goethe Museum lacks space for visitors to rest or engage with the Klassik Stiftung’s extensive digital collection of ~30,000 exhibits. The Project “Goethescher-Modul-Würfel” is a temporary pavilion that offers both—a place to pause and an informal setting to explore curated digital content.
+                                <br>
+                                Inspired by Goethe’s theory of colour and optics, the design started with an octagonal pattern. Transformed into a three-dimensional form it becomes a tetradecahedron. This cube-like, self-supporting structure is stable and easy to assemble, made from lightweight aluminium profiles, which are widely available and allow for variable uses within its structure.
+                                <br>
+                                Five of its six octagonal sides are covered in fabric, creating a canvas for projections or prints—ranging from event graphics (for e.g. Faust year) to digital exhibits from the Stiftung’s archives. The sixth side remains open for entry. The flexible format also allows it to be used for temporary installations, such as VR experiences or interactive media.
+                                <br>
+                                Fabric was chosen as a nod to Goethe’s interest in textiles, with the pavilion’s padded textile floor and cushions referencing quilted fabrics from his bedroom.
+                                <br>
+                                Designed for easy relocation, the pavilion can be used not only at the Goethe Haus but across other Klassik Stiftung sites in and around Weimar—offering a versatile and reusable platform for rest, reflection, and engagement.
+                            </div>
+                      
+                        </div> 
+                        <div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+ 
+                            <img class="uk-width-1-2" src="img/project01/img1.jpg">
+                            <img class="uk-width-1-2" src="img/project01/img2.jpg">
+                            <img class="uk-width-1-2" src="img/project01/img3.jpg">
+                            <img class="uk-width-1-2" src="img/project01/img4.jpg">
+                            <video src="videos/project01/GoethescherModulWuerfel_LionVotteler.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+                           
+                            <spline-viewer url="https://prod.spline.design/QAJ-535dNnb1YSRo/scene.splinecode"></spline-viewer>
+                           
+                    </div>
+                    </div>
+                    <div>
+                        <div class="uk-vertical-align-middle uk-width-1-2 ">
+        
+                            <div >
+                                <!-- project title goes here: -->
+                                <h2 class="uk-text-uppercase uk-margin-remove-bottom">   Reply to message </h2>
+                                <p class="uk-text-default uk-margin-remove-top ">Nicolas Roseng
+                             </p>
+                             </div>
+                             <div >
+                                 
+                             </div>
+                             <div class="">
+                                When you visit a museum, you are only a recipient of information, not a participant. Typically, an audio guide introduces you to exhibits and tells you information about them. This one-way flow does not leave room for questions or dialogue. Every time you receive new information, your body has a physical reaction. What if it was possible to control the device with these physical reactions, with our body language? So that the output from the audio guide would adapt to your needs and interests, which it interprets from your body language. Would this positively influence how new information is processed/consumed? 
+                                <br />
+                                <br />
+                            
+                                Aspects of a typical dialogue inform the interaction design:
+                                <br />
+                                <br />
+                                <ul>
+                                    <li>Getting in touch with a topic: touching the audio guide starts (and stops) the audio</li>
+                                    <li>Turn your attention towards it: by repositioning or aligning the device, the audio becomes stronger - the focus shifts to what is being listened to</li>
+                                    <li>Impulse to ask: unclear content can be repeated with a short press</li>
+                                This interaction design concept uses a sequence of physical gestures to combine listening and participation and allow an interactive connection to be established. 
+                                 
+                                <br />
+                                <br>
+                                Content can be controlled instinctively through physical participation. Visitors gain fresh access to (audible) knowledge that can be experienced haptically. This creates a form of accessibility that makes it possible to converse with the objects and their history through interaction.
+                </div>
+                      
+                        </div>
+                        <div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+ 
+                            <img class="uk-width-1-2" src="img/project02/img1.jpg">
+                            <img class="uk-width-1-2" src="img/project02/img2.jpg">
+                            <img class="uk-width-1-2" src="img/project02/img3.jpg">
+                            <img class="uk-width-1-2" src="img/project02/img4.jpg">
+                            <video src="videos/project02/ReplyToMessage_nicolas.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+                           
+                            <div  class="stlviewer uk-width-1-2" data-src="stl/ScreenTop.stl" data-rotate="x" data-zdistance="3">
+                                 </div>
+                             
+                           
+                    </div>
+
+                    </div>
+                    <div>
+                        <div class="uk-vertical-align-middle uk-width-1-2 ">
+        
+                            <div >
+                                <!-- project title goes here: -->
+                                <h2 class="uk-text-uppercase uk-margin-remove-bottom">  Goethe's Take On… 
+                                <br>
+                                (Was hätte Goethe gedacht?)</h2>
+                                <p class="uk-text-default uk-margin-remove-top ">Tiana Borcherding
+                                </p>
+                                </div>
+                                <div >
+                                    
+                                </div>
+                                <div class="">
+                                    What would Goethe’s take on issues like climate change be? What would he think about Trump?
+                                    <br />
+                                    In the initial research phase, I started asking those questions to AI, to get a quick introduction to Goethe’s thinking.
+                                    <br />
+                                    Much to my surprise, this interaction with an AI ‘personal tutor’ inspired further questions in me, drawing me deeper and deeper into the subject. While the typical interaction in museums can often feel passive and lacking personal relevance for visitors, this shift from initial distance to genuine curiosity by asking my own questions is exactly the kind of experience I wish for every visitor.
+                                    <br />
+                                    <br />
+                                    ‘Goethe's Take On…’ aims to deliver a more accessible pedagogical experience by encouraging visitors to enter into their own discourse with Goethe’s thinking and prompts a reflection on current issues. AI makes it possible to process large quantities of archive objects in a short amount of time and curate them for museum visitors. The artificial intelligence acts as a mediator and an expert ‘scholar’ of Goethe, and responds to visitors’ questions by connecting them to published sources.
+                                    <br />
+                                    Users hand-write their questions on cards or select a question from an archive of previously asked questions. In this way, the feeling of personal dialogue is activated haptically. The archive-like structure stores past interactions as a reference to ensure that everyone can benefit from previous explorations. The question is then scanned and answered by the specially programmed AI. The interaction design intends to communicate transparency and openness, emphasising that the AI is just a machine and can make mistakes.
+                      </div>
+                          
+                            </div> 
+                        <div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+ 
+                            <img class="uk-width-1-2" src="img/project03/img1.jpg">
+                            <div class="uk-width-1-2" >
+                                <img src="img/project03/img2.jpg">
+                            <img src="img/project03/img3.jpg">
+                            </div>
+                            <img class="uk-width-1-2" src="img/project03/img4.jpg">
+                            <video class="uk-width-1-2" src="videos/project04/SandorGoethe4klein.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+                           
+                    </div>
+
+                    </div>
+<div>  <div class="uk-vertical-align-middle uk-width-1-2 ">
+        
+    <div >
+
+        <div >
+            <!-- project title goes here: -->
+            <h2 class="uk-text-uppercase uk-margin-remove-bottom">      Goethe⁴</h2>
+            <p class="uk-text-default uk-margin-remove-top ">Sándor Lakatos 
+            </p>
+            </div>
+            <div >
+                
+            </div>
+            <div class="">
+                How can Goethe‘s House be experienced in a new way by school groups without physically changing anything about it?
+                        <br />
+                        <br />
+                        This is exactly where this design comes in: while a third of all visitors are school classes, the current audio guide hardly appeals to them. Instead of just conveying facts through a monotonous, anonymous voice, a format was developed that is more emotional, accessible and personalised: Goethe‘s literary characters themselves (Mephisto, Iphigenie, Werther and Otillie) guide visitors through the house in their own language, attitude and perspective. 
+                        <br />
+                        <br />
+                        The students use their own smartphones, a medium they are familiar with, and choose one literary character to accompany them through each part of the house. This creates an individual yet complete visitor experience that invites later discussion. The way the content is told is deliberately subjective, but still historically based. The whole experience is complemented by interactive modules such as immersion rooms, quiz formats or AR enhancements, which also take place virtually on smartphones.
+                        <br>
+                        <br>
+                        This means that not everyone experiences the same thing, but different perspectives on the same place. This is intended to stimulate discussions and dialogue afterwards and also provide an impetus not only to understand Goethe‘s works, but also to experience them.
+                   </div>
+      
+        </div> 
+        </div>
+    <div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+
+        <img class="uk-width-1-2" src="img/project04/img1.jpg">
+      
+            <img class="uk-width-1-2" src="img/project04/img2.jpg">
+        <img class="uk-width-1-2" src="img/project04/img3.jpg">
+      
+        <video class="uk-width-1-2" src="videos/project04/SandorGoethe4klein.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+       
+</div>
+ 
+</div>
+
+<div>  <div class="uk-vertical-align-middle uk-width-1-2 ">
+        
+    <div >
+        <!-- project title goes here: -->
+        <h2 class="uk-text-uppercase uk-margin-remove-bottom">    SOFTIIO</h2>
+        <p class="uk-text-default uk-margin-remove-top "><a href="mailto:sarah.winter@stud.kh-berlin.de">Sarah Winter,</a>
+            <a href="mailto:lara.bartos@stud.kh-berlin.de">Lara Bartos</a>
+        </p>
+        </div>
+        <div >
+            
+        </div>
+        <div class="">
+            During our visit to Goethe‘s house in Weimar, we observed the following: sensory experiences are not considered, you are not encouraged to linger, and there is no space to delve deeper. 
+                        <br />
+                        <br />   
+                        Knowledge seeks to be experienced. For school classes and teenagers, it‘s even harder to find the necessary focus or stillness to concentrate and to engage with what the museum has to offer.
+                        <br />
+                        We want to enable visitors to spend time, immerse themselves and enjoy more sensory experiences in museums.
+                        <br />
+                        <br />
+                        Our idea for ‘SOFTIIO’ was to design a personal companion that gives visitors to the Goethe Wohnhaus the possibility to experience the museum in a different way, wrapped in a feeling of comfort. We aimed to design an object that you could take with you into the museum, and whenever you feel like a break or input about Goethe, it would be at your side. Thanks to a digital sensor system in our object, SOFTIIO enables a playful, intuitive and sensual interaction that follows your flow. The interaction is reminiscent of a game: a game between object and visitor based on movement and stillness. “STOP, GO, SOFTIIO” - It is soft but consistent. As soon as you move, the audio will stop. It rewards your stillness through haptic feedback and auditory output. The playful form of SOFTIIO invites exploration. Some visitors could carry it by its handle, while the soft and flexible cushioned parts could be used like a pillow or hang around one’s neck.
+                        <br />
+                        <br />
+                        Take a moment to listen, absorb your surroundings, surrender. Let go, relax, and be present.
+    </div>
+  
+    </div> 
+<div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+
+    <img class="uk-width-1-2" src="img/project05/img1.jpg">
+    <div class="uk-width-1-2" >
+        <img src="img/project05/img2.jpg">
+    <img src="img/project05/img3.jpg">
+    </div>
+    <img class="uk-width-1-2" src="img/project05/img4.jpg">
+    <video class="uk-width-1-2" src="videos/project05/Goethe.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+   
+</div>  
+</div>     
+
+<div>  <div class="uk-vertical-align-middle uk-width-1-2 ">
+        
+    <div >
+        <!-- project title goes here: -->
+        <h2 class="uk-text-uppercase uk-margin-remove-bottom">       HOOK</h2>
+        <p class="uk-text-default uk-margin-remove-top "> <a href="https://www.instagram.com/wgsammarro?igsh=YzJxbTFkb2R4c3Mw&utm_source=qr">Giuliano Wai Ging Sammarro,</a>
+            <a href="https://www.instagram.com/leifasmus?igsh=MXJvdmJpamlxd25hcA==">Leif Arne Asmus</a>
+        </p>
+        </div>
+        <div >
+            
+        </div>
+        <div class="">
+            The furniture series hook translates the interests of Johann Wolfang von Goethe, which are shown in the Goethe Nationalmuseum, Weimar, into a contemporary form. His living rooms were full of objects that guests could touch and discover. We transfer this principle of diversity and accessibility into the present day in an atmospheric way. It communicates transparently that the furniture pieces are not historic replicas, but a contemporary engagement with the historical context.
+                        <br />
+                        <br />
+                        The pieces are build around the conent of the exhibition: They are physical archives and provide storage space for thoughts. Five modules reference historical elements such as Goethe's living environment and the idea of the museum as a space for experience. 
+                        <br />
+                        The appearence of the modules build a bridge to the present. Hidden, integrated functions invite active discovery.
+                        <br />
+                        The furniture enables a new educational layer in the museum: it creates spaces that unite the museum context with the original feeling of Goethe's home. This creates a physical framework for an in-depth exploration of his world, beyond the classic exhibition practice.
+                        
+  </div>
+  
+    </div> 
+<div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+
+    <img class="uk-width-1-2" src="img/project06/img1.jpg">
+    
+        <img  class="uk-width-1-2"  src="img/project06/img2.jpg">
+    <img  class="uk-width-1-2"  src="img/project06/img3.jpg">
+   
+    <img class="uk-width-1-2" src="img/project06/img4.jpg">
+    <img  class="uk-width-1-2"  src="img/project06/img5.jpg">
+   
+    <img class="uk-width-1-2" src="img/project06/img6.jpg">
+</div>  
+</div>     
+
+<div>  <div class="uk-vertical-align-middle uk-width-1-2 ">
+        
+    <div >
+        <!-- project title goes here: -->
+        <h2 class="uk-text-uppercase uk-margin-remove-bottom">   nachhall </h2>
+        <p class="uk-text-default uk-margin-remove-top ">      <a href="https://www.instagram.com/luendt_/">Luica Wendt</a> 
+        </p>
+        </div>
+        <div >
+            
+        </div>
+        <div class="">
+            After visiting a museum or cultural event, we often hold on to physical tokens like tickets – not because of their material value, but because they preserve a memory. Inspired by this desire, ‘Nachhall’ was designed as an interactive embossing automat that allows visitors to take home an aesthetic yet meaningful souvenir. Situated in the entrance hall of the Goethe national museum, the automat transforms this unused space and default meeting point into a place that makes people want to stick around and to engage in conversation. It creates a low-cost souvenir that still feels valuable – especially for school groups, the museum’s primary target audience.
+            <br />
+            <br />
+            Instead of providing further information after an already content-rich exhibition, the automat poses a simple question: „What‘s on your mind?“, offering a wide range of topics to choose from. The visitor gets to physically engage with the question by feeding a blank card into the chosen slot. Turning a knob then produces an embossed, reflective counter question — inspired by themes from Goethe’s works and worldview. The goal is not to teach, but to invite a moment of introspection.
+            <br />
+            <br />
+            The decision to work with embossing was both conceptual and practical: it allows for low production cost, strong material presence, and a timeless aesthetic. The machine‘s design and marbled exterior reference Goethe’s interest in Italian style and his collections of stones, historical coins and medals — physical objects with personal, cultural, and symbolic meaning. 
+            
+
+    </div> 
+    </div>
+<div class="uk-grid" data-uk-grid-margin class="uk-width-1-1">
+
+    <img class="uk-width-1-2" src="img/project07/img1.jpg">
+    <div class="uk-width-1-2" >
+        <img src="img/project07/img5.jpg">
+    <img src="img/project07/img3.jpg">
+    </div>
+    <img class="uk-width-1-2" src="img/project07/img4.jpg">
+    <img class="uk-width-1-2" src="img/project07/img7.jpg">
+    <video class="uk-width-1-2" src="videos/project07/nachhall neu.mp4" width="" height="" uk-video="autoplay: hover" preload="none" loop controls></video>
+    <img class="uk-width-1-2" src="img/project07/img11.jpg">
+</div>  
+</div>     
+                  
+                     
+                       
+              
+
+
+              </div>
+          
+        </div>
+        </div>
+        </div>
+
+
+    
+    </body>
+</html>
